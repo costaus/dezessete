@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>17Store | Moda Masculina em Lavras - MG</title>
+    <!-- Carregando Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configuração de Tema Preto e Branco e Fontes Oswald (Street) e Inter (Corpo) -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Oswald:wght@200..700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #000000; /* Fundo preto predominante */
+            color: #ffffff; /* Texto branco */
+            scroll-behavior: smooth;
+        }
+        /* Classe para títulos com impacto, usando a fonte Oswald */
+        .street-title {
+             font-family: 'Oswald', sans-serif;
+        }
+        /* Estilo para links e botões em tema P&B */
+        .btn-primary {
+            @apply inline-block px-8 py-3 text-sm font-medium transition-colors duration-300 rounded-lg shadow-lg;
+        }
+        .btn-dark {
+            @apply bg-white text-black hover:bg-gray-200 border border-white;
+        }
+        .btn-light {
+            @apply bg-black text-white hover:bg-gray-800 border border-white;
+        }
+        /* Estilo para garantir contraste em fundos claros */
+        .section-white {
+            background-color: #ffffff;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho e Navegação Fixa -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-sm shadow-md">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <!-- Logo (Aumentada para h-16/h-20) -->
+            <a href="#home" class="flex items-center">
+                <img src="https://iili.io/KVwKOve.png" alt="Logo da 17Store" class="h-16 md:h-20 rounded-lg transition-all duration-300">
+            </a>
+
+            <!-- Links de Navegação (Desktop) -->
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#home" class="hover:text-gray-400 transition-colors">Início</a>
+                <a href="#sobre" class="hover:text-gray-400 transition-colors">Sobre</a>
+                <a href="#localizacao" class="hover:text-gray-400 transition-colors">Localização</a>
+                <a href="#contato" class="hover:text-gray-400 transition-colors">Contato</a>
+            </div>
+
+            <!-- Botão Chamada para Ação (Desktop) -->
+            <div class="hidden md:block">
+                <a href="#contato" class="btn-primary btn-dark">Fale Conosco</a>
+            </div>
+
+            <!-- Menu Mobile (Ícone) -->
+            <button id="mobile-menu-button" class="md:hidden p-2 rounded-lg hover:bg-gray-800 transition-colors">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+
+        <!-- Menu Dropdown Mobile -->
+        <div id="mobile-menu" class="hidden md:hidden bg-black py-2">
+            <a href="#home" class="block px-4 py-2 text-white hover:bg-gray-800 transition-colors">Início</a>
+            <a href="#sobre" class="block px-4 py-2 text-white hover:bg-gray-800 transition-colors">Sobre</a>
+            <a href="#localizacao" class="block px-4 py-2 text-white hover:bg-gray-800 transition-colors">Localização</a>
+            <a href="#contato" class="block px-4 py-2 text-white hover:bg-gray-800 transition-colors">Contato</a>
+            <a href="#contato" class="block text-center mx-4 my-2 btn-primary btn-dark">Fale Conosco</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. Seção HERO / Destaque (Aparência mais Street/Urbana) -->
+        <section id="home" class="h-screen flex items-center justify-center pt-24 pb-12 bg-black">
+            <div class="text-center max-w-4xl px-4">
+                
+                <!-- Logo no topo da seção, mais em destaque (w-48/w-72) -->
+                <img src="https://iili.io/KVwKOve.png" alt="Logo 17Store" class="w-48 h-auto mx-auto mb-6 md:w-72 transition-all duration-300 transform hover:scale-105"> 
+                
+                <!-- O H1 (17STORE) foi removido para deixar só a imagem -->
+                <h1 class="sr-only street-title text-6xl md:text-8xl font-extrabold tracking-widest mb-4 leading-none">
+                    17STORE
+                </h1>
+                
+                <p class="text-2xl md:text-4xl text-white font-bold mb-4 uppercase tracking-widest street-title">
+                    Moda Masculina em Lavras
+                </p>
+                <!-- Novo Slogan Localizado -->
+                <p class="text-lg md:text-xl font-medium uppercase tracking-wider mb-10 text-gray-400 border-b-2 border-gray-400 inline-block pb-1">
+                    Vestindo Lavras
+                </p>
+                <!-- CTA ajustado para coleções -->
+                <a href="#sobre" class="btn-primary btn-dark animate-pulse">
+                    Ver Coleção
+                </a>
+            </div>
+        </section>
+
+        <!-- 2. Seção SOBRE (Fundo Branco) -->
+        <section id="sobre" class="section-white py-20 md:py-32">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="street-title text-4xl font-bold mb-4">
+                        Nossa Essência
+                    </h2>
+                    <div class="w-16 h-1 bg-black mx-auto mb-12 rounded-full"></div>
+                </div>
+
+                <div class="max-w-3xl mx-auto text-lg leading-relaxed space-y-6">
+                    <!-- Texto revisado, mantendo foco streetwear -->
+                    <p>
+                        A <strong>17Store</strong> é o novo ponto de referência da <strong>moda masculina</strong> em Lavras. Focados na curadoria de peças <strong>essenciais, atemporais e de alta qualidade</strong>, nosso objetivo é vestir você com atitude e sofisticação urbana.
+                    </p>
+                    <p>
+                        Valorizamos o **design arrojado** e a construção impecável, garantindo que cada peça ofereça o máximo de <strong>versatilidade</strong> e durabilidade. Aqui, você encontra o *fit* perfeito para expressar sua individualidade e elevar o seu visual de rua.
+                    </p>
+                    <p>
+                        Visite nosso espaço e descubra uma seleção pensada para o homem moderno que domina o estilo *streetwear*.
+                    </p>
+                </div>
+
+                <div class="mt-12 text-center">
+                    <a href="#contato" class="btn-primary btn-light">
+                        Veja Como Chegar
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Seção LOCALIZAÇÃO (Fundo Preto) -->
+        <section id="localizacao" class="bg-black py-20 md:py-32">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="street-title text-4xl font-bold mb-4">
+                        Onde Nos Encontrar
+                    </h2>
+                    <div class="w-16 h-1 bg-white mx-auto mb-12 rounded-full"></div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-10 items-center">
+                    <!-- Informações de Endereço -->
+                    <div>
+                        <p class="text-xl md:text-2xl font-semibold mb-4 text-gray-300">
+                            Ponto de Estilo em Lavras:
+                        </p>
+                        <address class="text-lg leading-relaxed space-y-2 mb-8 not-italic">
+                            <p>Av. Dr. Sylvio Menicucci, 1000</p>
+                            <p>Bairro Centenário</p>
+                            <p>Lavras - MG, 37200-000</p>
+                        </address>
+                        <a href="https://maps.google.com/?q=Av.+Dr.+Sylvio+Menicucci,+1000,+Lavras+-+MG" target="_blank" class="text-sm font-medium underline hover:text-gray-400 transition-colors flex items-center">
+                            Ver no Google Maps
+                            <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path></svg>
+                        </a>
+                    </div>
+
+                    <!-- Placeholder do Mapa -->
+                    <div class="h-64 md:h-80 w-full rounded-lg overflow-hidden border border-white">
+                        <div class="flex items-center justify-center h-full bg-gray-900">
+                            <p class="text-gray-500 italic">Placeholder para o Mapa Interativo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Seção CONTATO (Fundo Branco) -->
+        <section id="contato" class="section-white py-20 md:py-32">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="street-title text-4xl font-bold mb-4">
+                        Entre em Contato
+                    </h2>
+                    <div class="w-16 h-1 bg-black mx-auto mb-12 rounded-full"></div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-10">
+                    <!-- Formulário de Contato -->
+                    <div class="p-6 bg-gray-50 rounded-xl shadow-lg border border-gray-200">
+                        <form action="#" method="POST" class="space-y-6">
+                            <h3 class="text-2xl font-semibold mb-4 text-black">Fale com a Equipe</h3>
+                            <div>
+                                <label for="nome" class="block text-sm font-medium text-gray-700 mb-1">Nome Completo</label>
+                                <input type="text" id="nome" name="nome" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-black focus:border-black transition-colors text-black">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">E-mail</label>
+                                <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-black focus:border-black transition-colors text-black">
+                            </div>
+                            <div>
+                                <label for="mensagem" class="block text-sm font-medium text-gray-700 mb-1">Mensagem</label>
+                                <textarea id="mensagem" name="mensagem" rows="4" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-black focus:border-black transition-colors text-black"></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary btn-light w-full">
+                                Enviar Mensagem
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Detalhes de Contato -->
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-4 text-black">Informações</h3>
+                        <div class="space-y-6 text-gray-700">
+                            <div>
+                                <p class="font-medium">Telefone:</p>
+                                <a href="tel:+553599999999" class="text-lg hover:text-black transition-colors">(35) 9 9999-9999</a>
+                            </div>
+                            <div>
+                                <p class="font-medium">E-mail Comercial:</p>
+                                <a href="mailto:contato@17storelavras.com.br" class="text-lg hover:text-black transition-colors">contato@17storelavras.com.br</a>
+                            </div>
+                            <div>
+                                <p class="font-medium">Horário de Funcionamento:</p>
+                                <p class="text-lg">Seg - Sex: 9h às 18h</p>
+                                <p class="text-lg">Sáb: 9h às 13h</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-black border-t border-gray-800 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-400 text-sm space-y-4">
+            <div class="flex justify-center space-x-6">
+                <!-- Links de Mídias Sociais (Placeholder) -->
+                <a href="#" class="hover:text-white transition-colors">Instagram</a>
+                <a href="#" class="hover:text-white transition-colors">WhatsApp</a>
+                <a href="#" class="hover:text-white transition-colors">TikTok</a>
+            </div>
+            <p>&copy; 2025 17Store. Todos os direitos reservados. Lavras - MG.</p>
+            <p class="text-xs">Design & Conceito: Streetwear & Quality.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript para o Menu Mobile -->
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Fechar o menu mobile ao clicar em um link
+        document.getElementById('mobile-menu').querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+
+        // Função para simular o comportamento de scroll para o topo e ocultar/mostrar a navegação
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.classList.add('shadow-xl');
+            } else {
+                header.classList.remove('shadow-xl');
+            }
+        });
+    </script>
+</body>
+</html>
