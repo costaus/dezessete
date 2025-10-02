@@ -21,13 +21,16 @@
         }
         /* Estilo para links e botões em tema P&B */
         .btn-primary {
-            @apply inline-block px-8 py-3 text-sm font-medium transition-colors duration-300 rounded-lg shadow-lg;
+            /* Alterado para ser totalmente P&B */
+            @apply inline-block px-8 py-3 text-sm font-medium transition-colors duration-300 rounded-lg shadow-lg border-2 border-white;
         }
         .btn-dark {
-            @apply bg-white text-black hover:bg-gray-200 border border-white;
+            /* Botão claro (Texto preto em fundo branco/quase-branco) */
+            @apply bg-white text-black hover:bg-gray-200;
         }
         .btn-light {
-            @apply bg-black text-white hover:bg-gray-800 border border-white;
+            /* Botão escuro (Texto branco em fundo preto/quase-preto) */
+            @apply bg-black text-white hover:bg-gray-800;
         }
         /* Estilo para garantir contraste em fundos claros */
         .section-white {
@@ -49,6 +52,7 @@
             <!-- Links de Navegação (Desktop) -->
             <div class="hidden md:flex space-x-8 text-sm font-medium">
                 <a href="#home" class="hover:text-gray-400 transition-colors">Início</a>
+                <a href="#colecao" class="hover:text-gray-400 transition-colors">Coleção</a>
                 <a href="#sobre" class="hover:text-gray-400 transition-colors">Sobre</a>
                 <a href="#localizacao" class="hover:text-gray-400 transition-colors">Localização</a>
                 <a href="#contato" class="hover:text-gray-400 transition-colors">Contato</a>
@@ -68,6 +72,7 @@
         <!-- Menu Dropdown Mobile -->
         <div id="mobile-menu" class="hidden md:hidden bg-black py-2">
             <a href="#home" class="block px-4 py-2 text-white hover:bg-gray-800 transition-colors">Início</a>
+            <a href="#colecao" class="block px-4 py-2 text-white hover:bg-gray-800 transition-colors">Coleção</a>
             <a href="#sobre" class="block px-4 py-2 text-white hover:bg-gray-800 transition-colors">Sobre</a>
             <a href="#localizacao" class="block px-4 py-2 text-white hover:bg-gray-800 transition-colors">Localização</a>
             <a href="#contato" class="block px-4 py-2 text-white hover:bg-gray-800 transition-colors">Contato</a>
@@ -80,8 +85,8 @@
         <section id="home" class="h-screen flex items-center justify-center pt-24 pb-12 bg-black">
             <div class="text-center max-w-4xl px-4">
                 
-                <!-- Logo no topo da seção, mais em destaque (w-48/w-72) -->
-                <img src="https://iili.io/KVwKOve.png" alt="Logo 17Store" class="w-48 h-auto mx-auto mb-6 md:w-72 transition-all duration-300 transform hover:scale-105"> 
+                <!-- Logo no topo da seção, mais em destaque (w-64/w-80) -->
+                <img src="https://iili.io/KVwKOve.png" alt="Logo 17Store" class="w-64 h-auto mx-auto mb-6 md:w-80 transition-all duration-300 transform hover:scale-105"> 
                 
                 <!-- O H1 (17STORE) foi removido para deixar só a imagem -->
                 <h1 class="sr-only street-title text-6xl md:text-8xl font-extrabold tracking-widest mb-4 leading-none">
@@ -96,9 +101,55 @@
                     Vestindo Lavras
                 </p>
                 <!-- CTA ajustado para coleções -->
-                <a href="#sobre" class="btn-primary btn-dark animate-pulse">
+                <a href="#colecao" class="btn-primary btn-dark animate-pulse">
                     Ver Coleção
                 </a>
+            </div>
+        </section>
+
+        <!-- NOVO: Seção COLEÇÃO (Placeholder para Produtos) - AGORA 100% P&B -->
+        <section id="colecao" class="bg-black py-20 md:py-32 border-t border-gray-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="street-title text-4xl font-bold mb-4 text-white">
+                        Vitrines
+                    </h2>
+                    <div class="w-16 h-1 bg-white mx-auto mb-12 rounded-full"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Placeholder 1: Lançamentos -->
+                    <!-- Background do card ajustado para gray-950 (quase preto) para evitar o tom azulado -->
+                    <div class="bg-gray-950 rounded-lg p-6 shadow-xl border border-white/10 hover:shadow-2xl transition-all duration-300">
+                        <h3 class="street-title text-2xl font-bold mb-4 text-white uppercase">Lançamentos</h3>
+                        <p class="text-gray-400 mb-6">As novidades mais quentes do streetwear, chegando primeiro aqui na 17Store. Peças exclusivas para quem manda no estilo.</p>
+                        <div class="h-40 bg-gray-800 rounded-lg flex items-center justify-center mb-4 border border-white/20">
+                            <p class="text-gray-500 italic">Foto Coleção 1</p>
+                        </div>
+                        <a href="#contato" class="btn-primary btn-dark w-full">Ver Novidades</a>
+                    </div>
+                    
+                    <!-- Placeholder 2: Coleção Cápsula -->
+                    <div class="bg-gray-950 rounded-lg p-6 shadow-xl border border-white/10 hover:shadow-2xl transition-all duration-300">
+                        <h3 class="street-title text-2xl font-bold mb-4 text-white uppercase">Capsule</h3>
+                        <p class="text-gray-400 mb-6">Nossas peças essenciais, criadas para durar. A base perfeita para qualquer rolê, com o melhor custo-benefício.</p>
+                        <div class="h-40 bg-gray-800 rounded-lg flex items-center justify-center mb-4 border border-white/20">
+                            <p class="text-gray-500 italic">Foto Coleção 2</p>
+                        </div>
+                        <a href="#contato" class="btn-primary btn-dark w-full">Comprar Essenciais</a>
+                    </div>
+                    
+                    <!-- Placeholder 3: Acessórios -->
+                    <div class="bg-gray-950 rounded-lg p-6 shadow-xl border border-white/10 hover:shadow-2xl transition-all duration-300">
+                        <h3 class="street-title text-2xl font-bold mb-4 text-white uppercase">Acessórios</h3>
+                        <p class="text-gray-400 mb-6">Bonés, meias, carteiras e mais. O toque final que faz toda a diferença no seu visual de rua.</p>
+                        <div class="h-40 bg-gray-800 rounded-lg flex items-center justify-center mb-4 border border-white/20">
+                            <p class="text-gray-500 italic">Foto Coleção 3</p>
+                        </div>
+                        <a href="#contato" class="btn-primary btn-dark w-full">Descobrir</a>
+                    </div>
+                </div>
+
             </div>
         </section>
 
@@ -113,15 +164,15 @@
                 </div>
 
                 <div class="max-w-3xl mx-auto text-lg leading-relaxed space-y-6">
-                    <!-- Texto revisado, mantendo foco streetwear -->
+                    <!-- Texto revisado e tags de negrito corrigidas (fit e streetwear) -->
                     <p>
-                        A <strong>17Store</strong> é o novo ponto de referência da <strong>moda masculina</strong> em Lavras. Focados na curadoria de peças <strong>essenciais, atemporais e de alta qualidade</strong>, nosso objetivo é vestir você com atitude e sofisticação urbana.
+                        A <strong>17Store</strong> é o novo ponto de referência da <strong>moda masculina</strong> em Lavras. Focamos em peças <strong>chave e de alta qualidade</strong>, pra você montar um visual com atitude e estilo de rua.
                     </p>
                     <p>
-                        Valorizamos o **design arrojado** e a construção impecável, garantindo que cada peça ofereça o máximo de <strong>versatilidade</strong> e durabilidade. Aqui, você encontra o *fit* perfeito para expressar sua individualidade e elevar o seu visual de rua.
+                        A gente valoriza o <strong>design arrojado</strong> e a construção de <strong>primeira</strong>, garantindo que cada peça seja resistente e versátil. Aqui, você encontra o <strong>fit</strong> perfeito para expressar sua individualidade e turbinar o seu visual.
                     </p>
                     <p>
-                        Visite nosso espaço e descubra uma seleção pensada para o homem moderno que domina o estilo *streetwear*.
+                        Visite nosso espaço e descubra a seleção pensada para o homem moderno que domina o estilo <strong>streetwear</strong>.
                     </p>
                 </div>
 
