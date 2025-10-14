@@ -41,6 +41,8 @@
 </head>
 <body>
 
+    <h2>ATUALIZANDO...</h2>
+
     <!-- Cabeçalho e Navegação Fixa -->
     <header class="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-sm shadow-md">
         <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
@@ -49,18 +51,9 @@
                 <img src="https://iili.io/KVwKOve.png" alt="Logo da 17Store" class="h-16 md:h-20 rounded-lg transition-all duration-300">
             </a>
 
-            <!-- Links de Navegação (Desktop) -->
-            <div class="hidden md:flex space-x-8 text-sm font-medium">
-                <a href="#home" class="hover:text-gray-400 transition-colors">Início</a>
-                <a href="#colecao" class="hover:text-gray-400 transition-colors">Coleção</a>
-                <a href="#sobre" class="hover:text-gray-400 transition-colors">Sobre</a>
-                <a href="#localizacao" class="hover:text-gray-400 transition-colors">Localização</a>
-                <a href="#contato" class="hover:text-gray-400 transition-colors">Contato</a>
-            </div>
-
             <!-- Botão Chamada para Ação (Desktop) -->
             <div class="hidden md:block">
-                <a href="#contato" class="btn-primary btn-dark">Fale Conosco</a>
+                <a href="#contato" class="btn-primary btn-dark"></a>
             </div>
 
             <!-- Menu Mobile (Ícone) -->
@@ -68,42 +61,9 @@
                 <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
             </button>
         </nav>
-
-        <!-- Menu Dropdown Mobile -->
-        <div id="mobile-menu" class="hidden md:hidden bg-black py-2">
-            <a href="#home" class="block px-4 py-2 text-white hover:bg-gray-800 transition-colors">Início</a>
-            <a href="#colecao" class="block px-4 py-2 text-white hover:bg-gray-800 transition-colors">Coleção</a>
-            <a href="#sobre" class="block px-4 py-2 text-white hover:bg-gray-800 transition-colors">Sobre</a>
-            <a href="#localizacao" class="block px-4 py-2 text-white hover:bg-gray-800 transition-colors">Localização</a>
-            <a href="#contato" class="block px-4 py-2 text-white hover:bg-gray-800 transition-colors">Contato</a>
-            <a href="#contato" class="block text-center mx-4 my-2 btn-primary btn-dark">Fale Conosco</a>
-        </div>
     </header>
 
     <main>
-        <!-- 1. Seção HERO / Destaque (Aparência mais Street/Urbana) -->
-        <section id="home" class="h-screen flex items-center justify-center pt-24 pb-12 bg-black">
-            <div class="text-center max-w-4xl px-4">
-                
-                <!-- Logo no topo da seção, mais em destaque (w-64/w-80) -->
-                <img src="https://iili.io/KVwKOve.png" alt="Logo 17Store" class="w-64 h-auto mx-auto mb-6 md:w-80 transition-all duration-300 transform hover:scale-105"> 
-                
-                <!-- O H1 (17STORE) foi removido para deixar só a imagem -->
-                <h1 class="sr-only street-title text-6xl md:text-8xl font-extrabold tracking-widest mb-4 leading-none">
-                    17STORE
-                </h1>
-                
-                <p class="text-2xl md:text-4xl text-white font-bold mb-4 uppercase tracking-widest street-title">
-                    Moda Masculina em Lavras
-                </p>
-                <!-- Novo Slogan Localizado -->
-                <p class="text-lg md:text-xl font-medium uppercase tracking-wider mb-10 text-gray-400 border-b-2 border-gray-400 inline-block pb-1">
-                    Vestindo Lavras
-                </p>
-                <!-- CTA ajustado para coleções -->
-                <a href="#colecao" class="btn-primary btn-dark animate-pulse">
-                    Ver Coleção
-                </a>
             </div>
         </section>
 
@@ -111,42 +71,26 @@
         <section id="colecao" class="bg-black py-20 md:py-32 border-t border-gray-800">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center">
-                    <h2 class="street-title text-4xl font-bold mb-4 text-white">
-                        Vitrines
-                    </h2>
+                   
+                     
                     <div class="w-16 h-1 bg-white mx-auto mb-12 rounded-full"></div>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <!-- Placeholder 1: Lançamentos -->
                     <!-- Background do card ajustado para gray-950 (quase preto) para evitar o tom azulado -->
-                    <div class="bg-gray-950 rounded-lg p-6 shadow-xl border border-white/10 hover:shadow-2xl transition-all duration-300">
-                        <h3 class="street-title text-2xl font-bold mb-4 text-white uppercase">Lançamentos</h3>
-                        <p class="text-gray-400 mb-6">As novidades mais quentes do streetwear, chegando primeiro aqui na 17Store. Peças exclusivas para quem manda no estilo.</p>
-                        <div class="h-40 bg-gray-800 rounded-lg flex items-center justify-center mb-4 border border-white/20">
-                            <p class="text-gray-500 italic">Foto Coleção 1</p>
                         </div>
-                        <a href="#contato" class="btn-primary btn-dark w-full">Ver Novidades</a>
-                    </div>
-                    
-                    <!-- Placeholder 2: Coleção Cápsula -->
-                    <div class="bg-gray-950 rounded-lg p-6 shadow-xl border border-white/10 hover:shadow-2xl transition-all duration-300">
-                        <h3 class="street-title text-2xl font-bold mb-4 text-white uppercase">Capsule</h3>
-                        <p class="text-gray-400 mb-6">Nossas peças essenciais, criadas para durar. A base perfeita para qualquer rolê, com o melhor custo-benefício.</p>
-                        <div class="h-40 bg-gray-800 rounded-lg flex items-center justify-center mb-4 border border-white/20">
-                            <p class="text-gray-500 italic">Foto Coleção 2</p>
-                        </div>
-                        <a href="#contato" class="btn-primary btn-dark w-full">Comprar Essenciais</a>
+                        <a href="#contato" class="btn-primary btn-dark w-full"></a>
                     </div>
                     
                     <!-- Placeholder 3: Acessórios -->
                     <div class="bg-gray-950 rounded-lg p-6 shadow-xl border border-white/10 hover:shadow-2xl transition-all duration-300">
-                        <h3 class="street-title text-2xl font-bold mb-4 text-white uppercase">Acessórios</h3>
-                        <p class="text-gray-400 mb-6">Bonés, meias, carteiras e mais. O toque final que faz toda a diferença no seu visual de rua.</p>
+                        <h3 class="street-title text-2xl font-bold mb-4 text-white uppercase"></h3>
+                        <p class="text-gray-400 mb-6"></p>
                         <div class="h-40 bg-gray-800 rounded-lg flex items-center justify-center mb-4 border border-white/20">
-                            <p class="text-gray-500 italic">Foto Coleção 3</p>
+                            <p class="text-gray-500 italic"></p>
                         </div>
-                        <a href="#contato" class="btn-primary btn-dark w-full">Descobrir</a>
+                        <a href="#contato" class="btn-primary btn-dark w-full"></a>
                     </div>
                 </div>
 
@@ -158,7 +102,6 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center">
                     <h2 class="street-title text-4xl font-bold mb-4">
-                        Nossa Essência
                     </h2>
                     <div class="w-16 h-1 bg-black mx-auto mb-12 rounded-full"></div>
                 </div>
@@ -166,19 +109,19 @@
                 <div class="max-w-3xl mx-auto text-lg leading-relaxed space-y-6">
                     <!-- Texto revisado e tags de negrito corrigidas (fit e streetwear) -->
                     <p>
-                        A <strong>17Store</strong> é o novo ponto de referência da <strong>moda masculina</strong> em Lavras. Focamos em peças <strong>chave e de alta qualidade</strong>, pra você montar um visual com atitude e estilo de rua.
+                        A <strong></strong><strong></strong><strong></strong>
                     </p>
                     <p>
-                        A gente valoriza o <strong>design arrojado</strong> e a construção de <strong>primeira</strong>, garantindo que cada peça seja resistente e versátil. Aqui, você encontra o <strong>fit</strong> perfeito para expressar sua individualidade e turbinar o seu visual.
+                        <strong></strong><strong></strong><strong>fit</strong>
                     </p>
                     <p>
-                        Visite nosso espaço e descubra a seleção pensada para o homem moderno que domina o estilo <strong>streetwear</strong>.
+                         <strong></strong>.
                     </p>
                 </div>
 
                 <div class="mt-12 text-center">
                     <a href="#contato" class="btn-primary btn-light">
-                        Veja Como Chegar
+                        
                     </a>
                 </div>
             </div>
@@ -189,7 +132,7 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center">
                     <h2 class="street-title text-4xl font-bold mb-4">
-                        Onde Nos Encontrar
+                        
                     </h2>
                     <div class="w-16 h-1 bg-white mx-auto mb-12 rounded-full"></div>
                 </div>
@@ -198,12 +141,12 @@
                     <!-- Informações de Endereço -->
                     <div>
                         <p class="text-xl md:text-2xl font-semibold mb-4 text-gray-300">
-                            Ponto de Estilo em Lavras:
+                            
                         </p>
                         <address class="text-lg leading-relaxed space-y-2 mb-8 not-italic">
-                            <p>Av. Dr. Sylvio Menicucci, 1000</p>
-                            <p>Bairro Centenário</p>
-                            <p>Lavras - MG, 37200-000</p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
                         </address>
                         <a href="https://maps.google.com/?q=Av.+Dr.+Sylvio+Menicucci,+1000,+Lavras+-+MG" target="_blank" class="text-sm font-medium underline hover:text-gray-400 transition-colors flex items-center">
                             Ver no Google Maps
@@ -214,7 +157,7 @@
                     <!-- Placeholder do Mapa -->
                     <div class="h-64 md:h-80 w-full rounded-lg overflow-hidden border border-white">
                         <div class="flex items-center justify-center h-full bg-gray-900">
-                            <p class="text-gray-500 italic">Placeholder para o Mapa Interativo</p>
+                            <p class="text-gray-500 italic"></p>
                         </div>
                     </div>
                 </div>
@@ -226,7 +169,7 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center">
                     <h2 class="street-title text-4xl font-bold mb-4">
-                        Entre em Contato
+                        
                     </h2>
                     <div class="w-16 h-1 bg-black mx-auto mb-12 rounded-full"></div>
                 </div>
@@ -235,41 +178,41 @@
                     <!-- Formulário de Contato -->
                     <div class="p-6 bg-gray-50 rounded-xl shadow-lg border border-gray-200">
                         <form action="#" method="POST" class="space-y-6">
-                            <h3 class="text-2xl font-semibold mb-4 text-black">Fale com a Equipe</h3>
+                            <h3 class="text-2xl font-semibold mb-4 text-black"></h3>
                             <div>
-                                <label for="nome" class="block text-sm font-medium text-gray-700 mb-1">Nome Completo</label>
+                                <label for="nome" class="block text-sm font-medium text-gray-700 mb-1"></label>
                                 <input type="text" id="nome" name="nome" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-black focus:border-black transition-colors text-black">
                             </div>
                             <div>
-                                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">E-mail</label>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-1"></label>
                                 <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-black focus:border-black transition-colors text-black">
                             </div>
                             <div>
-                                <label for="mensagem" class="block text-sm font-medium text-gray-700 mb-1">Mensagem</label>
+                                <label for="mensagem" class="block text-sm font-medium text-gray-700 mb-1"></label>
                                 <textarea id="mensagem" name="mensagem" rows="4" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-black focus:border-black transition-colors text-black"></textarea>
                             </div>
                             <button type="submit" class="btn-primary btn-light w-full">
-                                Enviar Mensagem
+                               
                             </button>
                         </form>
                     </div>
 
                     <!-- Detalhes de Contato -->
                     <div class="p-6">
-                        <h3 class="text-2xl font-semibold mb-4 text-black">Informações</h3>
+                        <h3 class="text-2xl font-semibold mb-4 text-black"></h3>
                         <div class="space-y-6 text-gray-700">
                             <div>
-                                <p class="font-medium">Telefone:</p>
-                                <a href="tel:+553599999999" class="text-lg hover:text-black transition-colors">(35) 9 9999-9999</a>
+                                <p class="font-medium"></p>
+                                <a href="tel:+553599999999" class="text-lg hover:text-black transition-colors"></a>
                             </div>
                             <div>
-                                <p class="font-medium">E-mail Comercial:</p>
-                                <a href="mailto:contato@17storelavras.com.br" class="text-lg hover:text-black transition-colors">contato@17storelavras.com.br</a>
+                                <p class="font-medium"></p>
+                                <a href="mailto:contato@17storelavras.com.br" class="text-lg hover:text-black transition-colors"></a>
                             </div>
                             <div>
-                                <p class="font-medium">Horário de Funcionamento:</p>
-                                <p class="text-lg">Seg - Sex: 9h às 18h</p>
-                                <p class="text-lg">Sáb: 9h às 13h</p>
+                                <p class="font-medium"></p>
+                                <p class="text-lg"></p>
+                                <p class="text-lg"></p>
                             </div>
                         </div>
                     </div>
@@ -283,12 +226,12 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-400 text-sm space-y-4">
             <div class="flex justify-center space-x-6">
                 <!-- Links de Mídias Sociais (Placeholder) -->
-                <a href="#" class="hover:text-white transition-colors">Instagram</a>
-                <a href="#" class="hover:text-white transition-colors">WhatsApp</a>
-                <a href="#" class="hover:text-white transition-colors">TikTok</a>
+                <a href="#" class="hover:text-white transition-colors"></a>
+                <a href="#" class="hover:text-white transition-colors"></a>
+                <a href="#" class="hover:text-white transition-colors"></a>
             </div>
-            <p>&copy; 2025 17Store. Todos os direitos reservados. Lavras - MG.</p>
-            <p class="text-xs">Design & Conceito: Streetwear & Quality.</p>
+            <p></p>
+            <p class="text-xs"></p>
         </div>
     </footer>
 
